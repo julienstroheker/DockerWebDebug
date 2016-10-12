@@ -1,20 +1,710 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hello World Guys !!!</title>
-  </head>
-  <body>
-    <table align="center">
-      <tr>
-        <td align="center"><h1>Hello World !</h1></td>
-      </tr>
-      <tr>
-        <td align="center"><img src="HelloWorldGuys.gif"  /></td>
-      </tr>
-      <tr>
-        <!--<td><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57fe7d852674e0c5"></script></td>-->
-      </tr>
-  </table>
-  </body>
+<html lang="en">
+
+<!-- Mirrored from pudncorejstr-dev.azurewebsites.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Oct 2016 18:43:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page – Parts Unlimited</title>
+    <script>
+    var ApplicationInsightsInstrumentationKey = "7a42d2a0-0485-430a-90f8-0f40b1d86833";
+</script>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet"></link>
+
+    <link href="lib/jquery-ui-smoothness/jquery-ui.css" rel="stylesheet"></link>
+
+    <link href="Content/Site.css" rel="stylesheet"></link>
+<link href="Content/Home.css" rel="stylesheet"></link>
+<link href="Content/Account.css" rel="stylesheet"></link>
+<link href="Content/Store.css" rel="stylesheet"></link>
+<link href="Content/ShoppingCart.css" rel="stylesheet"></link>
+
+    <script src="lib/modernizr/modernizr.js" type="text/javascript"></script>
+
+    <script src="lib/jquery/jquery.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="primary-menu">
+                    <div class="pull-left logo">
+                        <a class="block logo-image" href="index.html">
+                            <img alt="Parts Unlimited logo" src="images/unlimited_logo.png" />
+                        </a>
+                        <a class="block" href="index.html">
+                            <h1>Parts Unlimited</h1>
+                            <h2>a Fabrikam subsidiary</h2>
+                        </a>
+                        <div class="visible-xs cart">
+                            <a href="ShoppingCart.html" class="head-link" id="shopping-cart-link"></a>
+                        </div>
+                    </div>
+                    <div class="pull-right navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-header-nav">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="collapse-header-nav">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="hidden-xs">
+                                    <div id="search-link-box">
+<form action="http://pudncorejstr-dev.azurewebsites.net/Search" method="get"><input class="form-control" id="search-box" name="q" placeholder="Keyword" type="text" value="" />                                            <input type="submit" id="search-link" value="Search" />
+</form>                                    </div>
+                                </li>
+                                <li><a href="index.html" class="head-link" id="home-link">Home</a></li>
+                                <li>
+    <a href="ShoppingCart.html" title="" class="head-link" id="shopping-cart-link">
+
+        <div>Cart</div>
+    </a>
+</li>
+                                
+
+
+                                    <li><a class="head-link" href="Account/Login.html" id="login-link">Log in</a></li>
+
+                                <li class="dropdown visible-xs">
+                                    <a href="Store.html" class="dropdown-toggle head-link" data-toggle="dropdown">Categories&nbsp;<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                            <li><a href="Store/Browse908f.html?CategoryId=1">Brakes</a></li>
+    <li><a href="Store/Browse1425.html?CategoryId=2">Lighting</a></li>
+    <li><a href="Store/Browse1a89.html?CategoryId=3">Wheels &amp; Tires</a></li>
+    <li><a href="Store/Browse7d93.html?CategoryId=4">Batteries</a></li>
+    <li><a href="Store/Browsedcb1.html?CategoryId=5">Oil</a></li>
+<li><a href="Store.html">More</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-menu">
+                <div class="container">
+                    <div class="hidden-xs">
+                        <ul>
+                                <li><a href="Store/Browse908f.html?CategoryId=1">Brakes</a></li>
+    <li><a href="Store/Browse1425.html?CategoryId=2">Lighting</a></li>
+    <li><a href="Store/Browse1a89.html?CategoryId=3">Wheels &amp; Tires</a></li>
+    <li><a href="Store/Browse7d93.html?CategoryId=4">Batteries</a></li>
+    <li><a href="Store/Browsedcb1.html?CategoryId=5">Oil</a></li>
+<li><a href="Store.html">More</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="visible-xs search-box">
+<form action="http://pudncorejstr-dev.azurewebsites.net/Search" method="get"><input class="form-control" id="q" name="q" placeholder="Search" type="text" value="" />                <input type="submit" value="" />
+</form>        </div>
+    </header>
+    
+<div class="hero-display">
+    <div id="jumbotron-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#jumbotron-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#jumbotron-carousel" data-slide-to="1"></li>
+            <li data-target="#jumbotron-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+        <div class="item active" style = "background-image: url('/images/hero_image1.jpg')">
+                <a href="Store/Browsea50c.html?categoryId=5" class="carousel-wrapper-link"></a>
+                <p>All oil and filters</p>
+                <p>20%</p>
+                <p>discount</p>
+                <div class="carousel-caption hidden-xs hidden-sm">
+                    <a href="Store/Browsea50c.html?categoryId=5" class="carousel-link">Shop Now</a>
+</div>
+            </div>
+            <div class="item" style = "background-image: url('/images/hero_image2.jpg')">
+                <a href="Store/Browsecea9.html?categoryId=3" class="carousel-wrapper-link"></a>
+                <div class="container">
+                    <p>New tires</p>
+                    <ul>
+                        <li>Improved fuel efficiency</li>
+                        <li>Superior wet weather braking</li>
+                        <li>Added durability</li>
+                    </ul>
+                </div>
+                <div class="carousel-caption hidden-xs hidden-sm">
+                    <a href="Store/Browsecea9.html?categoryId=3" class="carousel-link">Shop Now</a>
+                </div>
+            </div>
+            <div class="item" style = "background-image: url('/images/hero_image3.jpg')">
+                <a href="Store.html" class="carousel-wrapper-link"></a>
+                <p>Old<span> or </span>new</p>
+                <p>Find the parts for you</p>
+                <div class="carousel-caption hidden-xs hidden-sm">
+                    <a href="Store/Browsecea9.html?categoryId=3" class="carousel-link">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#jumbotron-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#jumbotron-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<div class="featured-areas">
+    <div class="container">
+        <section class="section-alt">
+            <div class="row">
+                <div class="area-tile col-xs-12 col-sm-3 col-md-3">
+                    <a href="index.html">
+                        <img src="images/submenu_image1.jpg" alt="New Season Parts Image" class="hidden-xs" />
+                        <div>New Season Parts</div>
+                    </a>
+                </div>
+                <div class="area-tile col-xs-12 col-sm-3 col-md-3">
+                    <a href="index.html">
+                        <img src="images/submenu_image2.jpg" alt="How to Guide Image" class="hidden-xs" />
+                        <div>How to Guide</div>
+                    </a>
+                </div>
+                <div class="area-tile col-xs-12 col-sm-3 col-md-3">
+                    <a href="index.html">
+                        <img src="images/submenu_image3.jpg" alt="Understand Your Engine Image" class="hidden-xs" />
+                        <div>Understand Your Engine</div>
+                    </a>
+                </div>
+                <div class="area-tile col-xs-12 col-sm-3 col-md-3">
+                    <a href="index.html">
+                        <img src="images/submenu_image4.jpg" alt="Road Trip Tips Image" class="hidden-xs" />
+                        <div>Road Trip Tips</div>
+            </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+    
+    <div class="container">
+        
+
+
+
+<a href="https://github.com/Microsoft/PartsUnlimited" target="_blank" class="hidden-xs">
+    <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="../s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png">
+</a>
+<div id="home-page">
+    <section class="section-alt">
+        <h2>Arrivals</h2>
+        
+    <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="list-item-part">
+                    <a href="Store/Details/1.html" title="Halogen Headlights (2 Pack)">
+                        <div class="product-image-container hover-over hidden-xs">
+                            <div class="image">
+                                <img src="images/product_lighting_headlight.jpg" alt="Halogen Headlights (2 Pack)"/>
+                            </div>
+                            <div class="detail">
+                                <h4>Halogen Headlights (2 Pack)</h4>
+                                <h5>$38.99</h5>
+                            </div>
+                            <div class="mouse-over hidden-xs">
+                                <div class="image-second">
+                                    <img src="images/product_lighting_headlight.jpg" alt="Halogen Headlights (2 Pack) zoom"/>
+                                </div>
+
+                                <div class="shop-now">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<span>Shop Now</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row visible-xs">
+                            <div class="col-xs-4 col-sm-12 col-md-12 no-gutter-sm no-gutter image">
+                                <img src="images/product_lighting_headlight.jpg" alt="Halogen Headlights (2 Pack)"/>
+                    </div>
+                            <div class="col-xs-8 col-sm-12 col-md-12 detail">
+                                <h4>Halogen Headlights (2 Pack)</h4>
+                                <h5>$38.99</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="list-item-part">
+                    <a href="Store/Details/2.html" title="Bugeye Headlights (2 Pack)">
+                        <div class="product-image-container hover-over hidden-xs">
+                            <div class="image">
+                                <img src="images/product_lighting_bugeye-headlight.jpg" alt="Bugeye Headlights (2 Pack)"/>
+                            </div>
+                            <div class="detail">
+                                <h4>Bugeye Headlights (2 Pack)</h4>
+                                <h5>$48.99</h5>
+                            </div>
+                            <div class="mouse-over hidden-xs">
+                                <div class="image-second">
+                                    <img src="images/product_lighting_bugeye-headlight.jpg" alt="Bugeye Headlights (2 Pack) zoom"/>
+                                </div>
+
+                                <div class="shop-now">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<span>Shop Now</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row visible-xs">
+                            <div class="col-xs-4 col-sm-12 col-md-12 no-gutter-sm no-gutter image">
+                                <img src="images/product_lighting_bugeye-headlight.jpg" alt="Bugeye Headlights (2 Pack)"/>
+                    </div>
+                            <div class="col-xs-8 col-sm-12 col-md-12 detail">
+                                <h4>Bugeye Headlights (2 Pack)</h4>
+                                <h5>$48.99</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="list-item-part">
+                    <a href="Store/Details/3.html" title="Turn Signal Light Bulb">
+                        <div class="product-image-container hover-over hidden-xs">
+                            <div class="image">
+                                <img src="images/product_lighting_lightbulb.jpg" alt="Turn Signal Light Bulb"/>
+                            </div>
+                            <div class="detail">
+                                <h4>Turn Signal Light Bulb</h4>
+                                <h5>$6.49</h5>
+                            </div>
+                            <div class="mouse-over hidden-xs">
+                                <div class="image-second">
+                                    <img src="images/product_lighting_lightbulb.jpg" alt="Turn Signal Light Bulb zoom"/>
+                                </div>
+
+                                <div class="shop-now">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<span>Shop Now</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row visible-xs">
+                            <div class="col-xs-4 col-sm-12 col-md-12 no-gutter-sm no-gutter image">
+                                <img src="images/product_lighting_lightbulb.jpg" alt="Turn Signal Light Bulb"/>
+                    </div>
+                            <div class="col-xs-8 col-sm-12 col-md-12 detail">
+                                <h4>Turn Signal Light Bulb</h4>
+                                <h5>$6.49</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="list-item-part">
+                    <a href="Store/Details/4.html" title="Matte Finish Rim">
+                        <div class="product-image-container hover-over hidden-xs">
+                            <div class="image">
+                                <img src="images/product_wheel_rim.jpg" alt="Matte Finish Rim"/>
+                            </div>
+                            <div class="detail">
+                                <h4>Matte Finish Rim</h4>
+                                <h5>$75.99</h5>
+                            </div>
+                            <div class="mouse-over hidden-xs">
+                                <div class="image-second">
+                                    <img src="images/product_wheel_rim.jpg" alt="Matte Finish Rim zoom"/>
+                                </div>
+
+                                <div class="shop-now">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<span>Shop Now</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row visible-xs">
+                            <div class="col-xs-4 col-sm-12 col-md-12 no-gutter-sm no-gutter image">
+                                <img src="images/product_wheel_rim.jpg" alt="Matte Finish Rim"/>
+                    </div>
+                            <div class="col-xs-8 col-sm-12 col-md-12 detail">
+                                <h4>Matte Finish Rim</h4>
+                                <h5>$75.99</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+    </div>
+
+    </section>
+    <section class="section-alt">
+        <h2>Top Selling</h2>
+        
+    <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="list-item-part">
+                    <a href="Store/Details/16.html" title="Filter Set">
+                        <div class="product-image-container hover-over hidden-xs">
+                            <div class="image">
+                                <img src="images/product_oil_filters.jpg" alt="Filter Set"/>
+                            </div>
+                            <div class="detail">
+                                <h4>Filter Set</h4>
+                                <h5>$28.99</h5>
+                            </div>
+                            <div class="mouse-over hidden-xs">
+                                <div class="image-second">
+                                    <img src="images/product_oil_filters.jpg" alt="Filter Set zoom"/>
+                                </div>
+
+                                <div class="shop-now">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<span>Shop Now</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row visible-xs">
+                            <div class="col-xs-4 col-sm-12 col-md-12 no-gutter-sm no-gutter image">
+                                <img src="images/product_oil_filters.jpg" alt="Filter Set"/>
+                    </div>
+                            <div class="col-xs-8 col-sm-12 col-md-12 detail">
+                                <h4>Filter Set</h4>
+                                <h5>$28.99</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="list-item-part">
+                    <a href="Store/Details/18.html" title="Synthetic Engine Oil">
+                        <div class="product-image-container hover-over hidden-xs">
+                            <div class="image">
+                                <img src="images/product_oil_premium-oil.jpg" alt="Synthetic Engine Oil"/>
+                            </div>
+                            <div class="detail">
+                                <h4>Synthetic Engine Oil</h4>
+                                <h5>$36.49</h5>
+                            </div>
+                            <div class="mouse-over hidden-xs">
+                                <div class="image-second">
+                                    <img src="images/product_oil_premium-oil.jpg" alt="Synthetic Engine Oil zoom"/>
+                                </div>
+
+                                <div class="shop-now">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<span>Shop Now</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row visible-xs">
+                            <div class="col-xs-4 col-sm-12 col-md-12 no-gutter-sm no-gutter image">
+                                <img src="images/product_oil_premium-oil.jpg" alt="Synthetic Engine Oil"/>
+                    </div>
+                            <div class="col-xs-8 col-sm-12 col-md-12 detail">
+                                <h4>Synthetic Engine Oil</h4>
+                                <h5>$36.49</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="list-item-part">
+                    <a href="Store/Details/15.html" title="Jumper Leads">
+                        <div class="product-image-container hover-over hidden-xs">
+                            <div class="image">
+                                <img src="images/product_batteries_jumper-leads.jpg" alt="Jumper Leads"/>
+                            </div>
+                            <div class="detail">
+                                <h4>Jumper Leads</h4>
+                                <h5>$16.99</h5>
+                            </div>
+                            <div class="mouse-over hidden-xs">
+                                <div class="image-second">
+                                    <img src="images/product_batteries_jumper-leads.jpg" alt="Jumper Leads zoom"/>
+                                </div>
+
+                                <div class="shop-now">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<span>Shop Now</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row visible-xs">
+                            <div class="col-xs-4 col-sm-12 col-md-12 no-gutter-sm no-gutter image">
+                                <img src="images/product_batteries_jumper-leads.jpg" alt="Jumper Leads"/>
+                    </div>
+                            <div class="col-xs-8 col-sm-12 col-md-12 detail">
+                                <h4>Jumper Leads</h4>
+                                <h5>$16.99</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="list-item-part">
+                    <a href="Store/Details/8.html" title="Chrome Rim Tire Combo">
+                        <div class="product-image-container hover-over hidden-xs">
+                            <div class="image">
+                                <img src="images/product_wheel_tyre-rim-chrome-combo.jpg" alt="Chrome Rim Tire Combo"/>
+                            </div>
+                            <div class="detail">
+                                <h4>Chrome Rim Tire Combo</h4>
+                                <h5>$129.99</h5>
+                            </div>
+                            <div class="mouse-over hidden-xs">
+                                <div class="image-second">
+                                    <img src="images/product_wheel_tyre-rim-chrome-combo.jpg" alt="Chrome Rim Tire Combo zoom"/>
+                                </div>
+
+                                <div class="shop-now">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;<span>Shop Now</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row visible-xs">
+                            <div class="col-xs-4 col-sm-12 col-md-12 no-gutter-sm no-gutter image">
+                                <img src="images/product_wheel_tyre-rim-chrome-combo.jpg" alt="Chrome Rim Tire Combo"/>
+                    </div>
+                            <div class="col-xs-8 col-sm-12 col-md-12 detail">
+                                <h4>Chrome Rim Tire Combo</h4>
+                                <h5>$129.99</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+    </div>
+
+    </section>
+    <section class="section-alt">
+        <h2>Community</h2>
+        <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="list-item-post">
+                <div class="hidden-xs hidden-sm">
+                    <div class="row">
+                        <div class="col-sm-12"><img src="images/community_1.png" /></div>
+
+                        <div class="col-sm-12"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo tellus lorem, et bibendum velit sagittis in. Integer nisl augue, cursus id tellus in, sodales porta.</p></div>
+                        <div class="col-sm-3 social-icon">
+                                <img src="images/facebook_icon.jpg" />
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="community-source">
+                                Facebook<br />12 October 2016
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visible-xs visible-sm">
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-1">
+                                <img src="images/facebook_icon.jpg" />
+                        </div>
+                        <div class="col-xs-10 col-sm-11 no-gutter-xs-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo tellus lorem, et bibendum velit sagittis in. Integer nisl augue, cursus id tellus in, sodales porta.</p></div>
+                        <div class="col-xs-10 col-sm-11 no-gutter-xs-left pull-right">
+                            <p>Facebook,&nbsp;12 October 2016</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="list-item-post">
+                <div class="hidden-xs hidden-sm">
+                    <div class="row">
+                        <div class="col-sm-12"><img src="images/community_2.png" /></div>
+
+                        <div class="col-sm-12"><p> Donec tincidunt risus in ligula varius, feugiat placerat nisi condimentum. Quisque rutrum eleifend venenatis. Phasellus a hendrerit urna. Cras arcu leo, hendrerit vel mollis nec.</p></div>
+                        <div class="col-sm-3 social-icon">
+                                <img src="images/facebook_icon.jpg" />
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="community-source">
+                                Facebook<br />12 October 2016
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visible-xs visible-sm">
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-1">
+                                <img src="images/facebook_icon.jpg" />
+                        </div>
+                        <div class="col-xs-10 col-sm-11 no-gutter-xs-left"><p> Donec tincidunt risus in ligula varius, feugiat placerat nisi condimentum. Quisque rutrum eleifend venenatis. Phasellus a hendrerit urna. Cras arcu leo, hendrerit vel mollis nec.</p></div>
+                        <div class="col-xs-10 col-sm-11 no-gutter-xs-left pull-right">
+                            <p>Facebook,&nbsp;12 October 2016</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="list-item-post">
+                <div class="hidden-xs hidden-sm">
+                    <div class="row">
+                        <div class="col-sm-12"><img src="images/community_3.png" /></div>
+
+                        <div class="col-sm-12"><p>Aenean vestibulum non lacus non molestie. Curabitur maximus interdum magna, ullamcorper facilisis tellus fermentum eu. Pellentesque iaculis enim ac vestibulum mollis.</p></div>
+                        <div class="col-sm-3 social-icon">
+                                <img src="images/facebook_icon.jpg" />
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="community-source">
+                                Facebook<br />12 October 2016
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visible-xs visible-sm">
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-1">
+                                <img src="images/facebook_icon.jpg" />
+                        </div>
+                        <div class="col-xs-10 col-sm-11 no-gutter-xs-left"><p>Aenean vestibulum non lacus non molestie. Curabitur maximus interdum magna, ullamcorper facilisis tellus fermentum eu. Pellentesque iaculis enim ac vestibulum mollis.</p></div>
+                        <div class="col-xs-10 col-sm-11 no-gutter-xs-left pull-right">
+                            <p>Facebook,&nbsp;12 October 2016</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="list-item-post">
+                <div class="hidden-xs hidden-sm">
+                    <div class="row">
+                        <div class="col-sm-12"><img src="images/community_4.png" /></div>
+
+                        <div class="col-sm-12"><p>Ut consectetur sed justo vel convallis. Vestibulum quis metus leo. Nulla hendrerit pharetra dui, vel euismod lectus elementum sit amet. Nam dolor turpis, sodales non mi nec.</p></div>
+                        <div class="col-sm-3 social-icon">
+                                <img src="images/facebook_icon.jpg" />
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="community-source">
+                                Facebook<br />12 October 2016
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visible-xs visible-sm">
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-1">
+                                <img src="images/facebook_icon.jpg" />
+                        </div>
+                        <div class="col-xs-10 col-sm-11 no-gutter-xs-left"><p>Ut consectetur sed justo vel convallis. Vestibulum quis metus leo. Nulla hendrerit pharetra dui, vel euismod lectus elementum sit amet. Nam dolor turpis, sodales non mi nec.</p></div>
+                        <div class="col-xs-10 col-sm-11 no-gutter-xs-left pull-right">
+                            <p>Facebook,&nbsp;12 October 2016</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </div>
+</div>
+    </section>
+</div>
+
+    </div>
+    <div class="clearfix"></div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Site Menu</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Store.html">Browse</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="Account/Login1d1d.html" title="Manage">Manage Account</a></li>
+                            <li><a href="ShoppingCart.html">Shopping Cart</a></li>
+                            <li><a href="Account/Login4884.html">View Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Additional Info</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Develop</h4>
+                        <ul>
+                            <li><a>GitHub Source</a></li>
+                            <li><a>License Agreement</a></li>
+                            <li><a href="http://asp.net/" target="_blank">ASP.NET</a></li>
+                        </ul>
+                        <p>Deploy to Azure</p>
+                        <a class="deploy-azure">
+                            <img alt="deploy to azure image" src="images/deploy_button.png" />
+                        </a>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="pull-left-sm">
+                            © 2016 Microsoft. Based on The Phoenix Project by <a href="http://www.realgenekim.me/" class="footer-link">Gene Kim</a>.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pull-left-sm pull-right-md">
+                            All rights reserved. Your payments are safe and secure.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center">
+                        Site powered by Windows 6.2.9200
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="lib/jquery-ui/jquery-ui.js" type="text/javascript"></script>
+
+    <script src="lib/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+
+    
+    <script src="Scripts/AppInsights.js" type="text/javascript"></script>
+<script src="Scripts/NewStoreArrivals.js" type="text/javascript"></script>
+<script src="Scripts/UI-Initialization.js" type="text/javascript"></script>
+<script src="Scripts/Recommendations.js" type="text/javascript"></script>
+
+    <script src="lib/respond/respond.src.js" type="text/javascript"></script>
+
+    
+    <script>
+        $('.carousel').carousel()
+    </script>
+
+</body>
+
+<!-- Mirrored from pudncorejstr-dev.azurewebsites.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Oct 2016 18:45:01 GMT -->
 </html>
